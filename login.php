@@ -1,35 +1,22 @@
-<?
-// Check if the form is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get the submitted username and password
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Validate the username and password
-    if ($username === 'teacher' && $password === 'password') {
-        // Redirect to the teacher dashboard
-        header('Location: teacher_dashboard.php');
-        exit;
-    } else {
-        // Display an error message
-        $error = 'Invalid username or password';
-    }
-}
+<?php
+    require_once "includes/config_sessioninc.php";
+    require_once "includes/login_viewinc.php";
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Teacher Login</title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>Teacher Login</h1>
+    <h1>Login</h1>
 
     <?php if (isset($error)) { ?>
         <p><?php echo $error; ?></p>
     <?php } ?>
 
-    <form method="POST" action="">
+    <form method="POST" action="includes/logininc.php">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required><br>
 
@@ -38,5 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <input type="submit" value="Login">
     </form>
+
+    <?php
+    check_login_errors();
+    ?>
 </body>
 </html>
