@@ -8,21 +8,34 @@ require_once 'includes/signup_viewinc.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <h3>Signup</h3>
+    <div class="container">
+        <div class="content-left">
+            <img src="Images/teaching.png" alt="Gambar Pembelajaran" class="background-image">
+        </div>
+        <div class="content-right">
+            <div class="signup-container">
+                <div class="header-logo">
+                    <img src="Images/logo.png" alt="Logo">
+                </div>
+                <h1 class="logo">Aktual Cendekia Course</h1>
+                <h1 class="signup">Sign-Up</h1>
 
-    <form action="includes/signupinc.php" method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="passwrod" name="password" placeholder="Password">
-        <input type="text" name="email" placeholder="E-mail">
-        <button>Sign-up</button>
-    </form>
+                <form action="includes/signupinc.php" method="post">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="text" name="email" placeholder="E-mail" required>
+                    <button>Sign-up</button>
+                </form>
 
-    <?php
-    check_signup_errors();
-    ?>
-    
+                <?php
+                check_signup_errors();
+                ?>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
