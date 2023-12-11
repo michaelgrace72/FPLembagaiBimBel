@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,43 +9,27 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to the Dashboard</h1>
-    </header>
+    <center>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Tutors</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Recent Courses</h2>
+        <header>
+            <h1>Welcome to the Dashboard</h1>
+        </header>
+        <nav>
             <ul>
-                <li>Course 1</li>
-                <li>Course 2</li>
-                <li>Course 3</li>
+                <li><a href="Material/LinearAlgebra.php">Linear Algebra</a></li>
+                <li><a href="Material/DiscreteMath.php">Discrete Math</a></li>
+                <li><a href="Material/BasicProgramming.php">Basic Programming</a></li>
+                <li><a href="Material/DigitalSystem.php">Digital System</a></li>
+                <li><a href="Material/DataStructures.php">Data Structures</a></li>
+                <li><a href="Material/ObjectOrientedProgramming.php">Object Oriented Programming</a></li>
             </ul>
-        </section>
+        </nav>
 
-        <section>
-            <h2>Upcoming Sessions</h2>
-            <ul>
-                <li>Session 1</li>
-                <li>Session 2</li>
-                <li>Session 3</li>
-            </ul>
-        </section>
-    </main>
+        <footer>
+            <p>&copy; 2022 Education Tutoring Website. All rights reserved.</p>
+        </footer>
+    </center>
 
-    <footer>
-        <p>&copy; 2022 Education Tutoring Website. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
