@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+iframe {
+    margin: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe[src*="youtube.com"] {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+}
+
+iframe[src*="pdfsources"] {
+    width: 80%;
+    max-width: 800px;
+    height: 600px;
+}
