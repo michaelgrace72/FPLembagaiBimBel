@@ -1,3 +1,8 @@
+<?php
+    include_once 'includes/config_sessioninc.php';
+    include_once 'includes/login_viewinc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +19,6 @@
 
 <body>
     <center>
-
     <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -31,12 +35,14 @@
                 <li><a class="nav-link scrollto" href="#jadwal">Jadwal</a></li>
                 <li><a class="nav-link scrollto" href="#pesan">Pesan</a></li>
                 <li><a class="nav-link scrollto" href="siswaterdaftar.php">Siswa Terdaftar</a></li>
-                <li><a class="getstarted scrollto" href="signup.php">Daftar</a></li>
+                <li><a class="nav-link scrollto" href=""><?php output_username()?></a></li>
+                <li><form action="includes/logoutinc.php" ><button class="getstarted scrollto">Logout</button></form></li>
             </ul>
         </nav>
         </div>
     </header>
 
+    <form action=""></form>
     <!-- ======= Courses ======= -->
     <section id="course" class="course section-bg">
         <div class="container" >

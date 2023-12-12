@@ -1,3 +1,6 @@
+<?php
+    require_once 'includes/signup_viewinc.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -17,7 +20,12 @@
             <p>Mulai perjalanan belajar Anda bersama kami. Pilih opsi untuk memulai:</p>
             <a href="login.php">Masuk</a>
             <a href="signup.php">Daftar</a>
+            <?php
+                check_signup_errors();
+                ?>
         </div>
+
+        
     </div>
 </body>
 </html>
