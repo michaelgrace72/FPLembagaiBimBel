@@ -177,16 +177,16 @@
     <section id="pesan" class="pesan-form">
         <h3>Kirim Pesan</h3>
         <p>Kirim pesan ke sesama siswa atau guru.</p>
-        <form id="pesan-form">
+        <form action="includes/pesaninc.php" method="post" id="pesan-form">
             <div class="person">
-                <label for="pengirim">Pengirim:</label>
-                <input type="text">
-                <label for="penerima">Penerima:</label>
-                <input type="text">
+                <label for="pengirim"  >Pengirim:</label>
+                <input type="text" name="pengirim">
+                <label for="penerima" >Penerima:</label>
+                <input type="text" name= "penerima">
             </div>
             <div class="pesan">
-                <label for="pesan">Pesan:</label>
-                <input type="text">
+                <label for="pesan" >Pesan:</label>
+                <input type="text" name="pesan">
             </div>
             <button type="submit">Kirim</button>
         </form>
