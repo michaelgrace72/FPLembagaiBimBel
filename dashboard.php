@@ -11,10 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/kalender.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="js/dashboard.js" defer></script>
+ 
+
+
 </head>
 
 <body>
@@ -140,17 +144,35 @@
         <div class="container">
             <div class="jadwal-title">
                 <p>Jadwal Kelas Online</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
             </div>                
-            </div>
+        </div>
                 <!-- JADWAL KEGIATAN DI SINI -->
+        </div>
+        <div class="wrapper">
+            <header>
+                <p class="current-date"></p>
+                <div class="icons">
+                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                </div>
+            </header>
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
             </div>
         </div>
     </section>
 
+
+    <section>
     <!-- ======= pesan ======= -->
     <section id="pesan" class="pesan-form">
         <h3>Kirim Pesan</h3>
