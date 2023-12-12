@@ -21,20 +21,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             $errors["login_incorrect"] = "Incorrect login info!";
         }
 
-        if( is_username_invalid($result) && is_password_invalid($password, $result["password"])){
+        if(!is_username_invalid($result) && is_password_invalid($password, $result["password"])){
             $errors["login_incorrect"] = "Incorrect login info!";
         }
-
-        
-
-
 
         require_once 'config_sessioninc.php';
 
         if($errors){
             $_SESSION["errors_login"] = $errors;
 
-            header("Location: ../signup.php");
+            header("Location: ../login.php");
             die();
         }
 
