@@ -36,7 +36,7 @@
                 <li><a class="nav-link scrollto" href="#pesan">Pesan</a></li>
                 <li><a class="nav-link scrollto" href="siswaterdaftar.php">Siswa Terdaftar</a></li>
                 <li><a class="nav-link scrollto" href=""><?php output_username()?></a></li>
-                <li><form action="includes/logoutinc.php" ><button class="getstarted scrollto">Logout</button></form></li>
+                
             </ul>
         </nav>
         </div>
