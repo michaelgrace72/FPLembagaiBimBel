@@ -22,11 +22,13 @@ const renderCalendar = () => {
         liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
     }
 
-    for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
-        // adding active class to li if the current day, month, and year matched
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
-                     && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday}">${i}</li>`;
+    for (let i = 1; i <= lastDateofMonth; i++) {
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
+        
+        // Check for specific dates (e.g., December 15th and 17th) and mark them with a different class
+        let isSpecialDate = (currMonth === 11 && i === 15) || (currMonth === 11 && i === 17) || (currMonth === 11 && i === 18) || (currMonth === 11 && i === 20) || (currMonth === 11 && i === 21) || (currMonth === 11 && i === 23) || (currMonth === 11 && i === 25) || (currMonth === 11 && i === 26) ? "special-date" : "";
+
+        liTag += `<li class="${isToday} ${isSpecialDate}">${i}</li>`;
     }
 
     for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
